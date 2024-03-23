@@ -1,6 +1,6 @@
 @import "./variables.css";
 @import "./fonts.css";
-@import './top-bar.css';
+@import "./top-bar.css";
 
 /* Start Default Styles */
 
@@ -38,3 +38,185 @@ i {
 }
 
 /* Finish Default Styles */
+
+/* Start Navbar Styles */
+
+/* main header right */
+.main-header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+/* main header left */
+.main-header__left {
+  display: flex;
+  align-items: center;
+}
+.main-header__search-btn {
+  background-color: var(--oranje-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 0.5rem;
+}
+.main-header__search-icon {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+.main-header__card-btn {
+  background-color: #f0f2f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 0.5rem;
+  margin-inline: 0.9rem;
+}
+
+.main-header__cart-btn:hover {
+  color: #1e83f0;
+}
+.main-header__cart-icon {
+  color: var(--dark-color);
+  font-size: 2.2rem;
+  transition: all 400ms ease;
+}
+.main-header__profile {
+  border: 1.5px solid var(--oranje-color);
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 400ms ease;
+  color: var(--oranje-color);
+  height: 4.3rem;
+}
+.main-header__profile:hover {
+  background-color: var(--oranje-color);
+  color: var(--white-color);
+}
+
+/* main header right */
+.main-header__right {
+  display: flex;
+}
+.main-header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-header__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0 1rem;
+}
+.main-header__link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  color: #7f8187;
+}
+.main-header__link:hover {
+  color: #7f8187;
+}
+
+.main-header__link-icon {
+  margin-right: 1rem;
+  margin-block: auto;
+}
+/* Start DropDown Styles */
+
+.main-header__dropdown {
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  background-color: var(--white-color);
+  transition: all 200ms ease-in-out;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0.5rem;
+  width: 24rem;
+  z-index: 1;
+  padding: 1rem;
+  line-height: 2;
+  border-bottom: 3px solid var(--oranje-color);
+  opacity: 0;
+  visibility: hidden;
+}
+.main-header__item:hover .main-header__dropdown {
+  opacity: 1;
+  visibility: visible;
+  top: 4.5rem;
+}
+.main-header__dropdown-link {
+  display: block;
+  padding: 0.6rem 2rem;
+  font-size: 1.4rem;
+  color: var(--dark-color);
+  transition: all 200ms ease;
+}
+
+.main-header__dropdown-link:hover {
+  color: #1e83f0;
+  border-right: 5px solid var(--oranje-color);
+}
+
+/* Finish Navbar Styles */
+
+/* Start Landing */
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(../images/pets/hp-sldr-easyrepeat-aug23-dt.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding: 9rem 0;
+  color: var(--white-color);
+}
+.landing__title {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.landing__subtitle {
+  font-size: 1.8rem;
+  margin-top: 0.3rem;
+}
+.landing__searchbar {
+  width: 700px;
+  position: relative;
+  margin: 3.5rem auto;
+}
+.landing__searchbar-input {
+  width: 100%;
+  padding: 2.9rem;
+  border: none;
+  border-radius: 1rem;
+}
+.landing__searchbar-input::placeholder {
+  font-size: 1.7rem;
+  color: var(--primary-color);
+}
+.landing__searchbar-btn {
+  border: none;
+  background-color: var(--oranje-color);
+  position: absolute;
+  left: 1rem;
+  width: 6rem;
+  top: 0.7rem;
+  height: 6rem;
+  border-radius: 1rem;
+}
+.landing__searchbar-icon {
+  font-size: 2.8rem;
+  color: var(--white-color);
+}
+/* Finish Landing */
