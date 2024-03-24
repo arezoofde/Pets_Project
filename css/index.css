@@ -220,3 +220,177 @@ i {
   color: var(--white-color);
 }
 /* Finish Landing */
+
+/*Start Shopping pets*/
+.Shopping{
+  margin: 4rem ;
+}
+.Shopping-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Shopping-header__right{
+  display: flex;
+  flex-direction: column;
+}
+
+.Shopping-header__link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+.Shopping-header__icon{
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+.Shopcard-box {
+  background-color: var(--white-color);
+  box-shadow: 0 0 19px rgba(168, 172, 185, 0.3);
+  border-radius: 1rem;
+  margin: 2rem 0;
+  transition: all 400ms ease;
+}
+
+.Shopcard-box:hover {
+  transform: translateY(-0.6rem);
+}
+.Shopcard-box__img {
+  width: 100%;
+  border-radius: 1rem 1rem  0 0;
+  padding: 4.5rem;
+}
+
+.Shopcard-box__main {
+  padding: 0 1.2rem;
+}
+
+.Shopcard-box__title {
+  display: block;
+  padding: 1rem 0;
+}
+
+.Shopcard-box__rating {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-inline: 1rem;
+}
+
+.Shopcard-box__star {
+  margin: 0.1rem;
+}
+
+.Shopcard-box__status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.Shopcard-box__users-icon {
+  color: #6c757d;
+  font-size: 1.6rem;
+}
+
+.Shopcard-box__users-text {
+  color: #6c757d;
+  font-size: 1.4rem;
+}
+
+.Shopcard-box__price {
+  color: #9c9c9c;
+  font-size: 1.8rem;
+}
+
+.Shopcard-box__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.3rem 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.Shopcard-box__footer-link {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  color: var(--oranje-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Shopcard-box__footer-icon {
+  margin-right: 0.5rem;
+  font-size: 1.9rem;
+}
+/* Finish Shopping pets*/
+
+/* Start aboutUs pets*/
+
+.aboutUs{
+  margin: 0.7rem 0;
+}
+
+.aboutUs-main__box{
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+  padding: 2rem 1.5rem;
+}
+.aboutUs-main__box-icon{
+  font-size: 6rem;
+  display: block;
+}
+
+.aboutUs-main__box-left{
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs-main__box-left-title{
+  font-size: 1.8rem;
+}
+.aboutUs-main__box-left-text{
+  font-size: 1.3rem;
+  color: #666;
+}
+/* Finish aboutUs pets*/
+
+/* Start Helper Classes */
+
+.title{
+  font-size: 2.3rem;
+  color: #444446;
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+}
+
+.title::before{
+  content: "";
+  position:absolute;
+  right:-1rem;
+  width: 0.4rem;
+  height: 4.0rem;
+  background-color: var(--oranje-color);
+  border-radius: 5rem;
+  transform: rotate(8deg);
+}
+.title::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width:100%;
+  height: 60%;
+  background-color: rgba(255, 133, 25, 0.2);
+
+}
+/*Finish Helper Classes*/
