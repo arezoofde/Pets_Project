@@ -20,9 +20,6 @@
   .top-bar__menu {
     display: flex;
   }
-  .top-bar__item .top-bar__link{
-    font-size:10px
-  }
   
   .top-bar__link {
     color: var(--dark-color);
@@ -48,7 +45,7 @@
   
   .top-bar__email-icon,
   .top-bar__phone-icon {
-    color: #E58608;
+    color: var(--primary-color);
     font-size: 2rem;
   }
   
